@@ -1,0 +1,11 @@
+<section class="coffee-list">
+  <h2>OUR SPECIAL COFFEE</h2>
+  <div class="coffee-grid">
+    @for (coffee of coffees(); track coffee.id) {
+      <app-coffee-card
+        [coffee]="coffee"
+        (orderCoffee)="onOrderCoffee($event)"
+      />
+    }
+  </div>
+</section>

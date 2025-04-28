@@ -1,0 +1,11 @@
+<div class="coffee-card">
+  <img [src]="coffee().image" [alt]="coffee().name">
+  <div class="coffee-info">
+    <h3>{{ coffee().name }}</h3>
+    <p>{{ coffee().description }}</p>
+    <div class="price-order">
+      <span class="price">Rs. {{ coffee().price }}</span>
+      <button (click)="onOrder()">Order Now</button>
+    </div>
+  </div>
+</div>

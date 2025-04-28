@@ -1,0 +1,78 @@
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&h=1080&fit=crop');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 80vh;
+
+  .header-content {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+
+    .logo h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 2rem;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #8B4513;
+        }
+      }
+    }
+
+    .selected-coffee {
+      background: rgba(139, 69, 19, 0.8);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      margin-left: 1rem;
+    }
+  }
+
+  .hero {
+    text-align: center;
+    padding: 8rem 2rem;
+
+    h2 {
+      font-size: 2rem;
+      margin: 0;
+      font-weight: 300;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin: 1rem 0 2rem;
+      line-height: 1.2;
+    }
+
+    .cta-button {
+      background: #8B4513;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background: #6B3410;
+      }
+    }
+  }
+}
